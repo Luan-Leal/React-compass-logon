@@ -1,0 +1,28 @@
+.input {
+    display: flex;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    margin-bottom: 5%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 4%;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+input:focus {
+    color: #ffffff;
+}
+
