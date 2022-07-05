@@ -7,24 +7,20 @@ import Button from "../../components/Button/index";
 import WhiteLogo from "../../assets/white-logo.png";
 
 function Login() {
+  const nav = useNavigate()
   const [user, setUser] = useState("")
   const [password, setPassword] = useState("")
 
-  function handleSaveUser(event) {
+  const handleSaveUser = (event) => {
     event.preventDefault()
-    const data = {
-      user, password
-    }
+    const data = {user, password}
     if(data.user && data.password === "admin"){
       alert("certo")
       nav("/home")
     }else{
       alert("errado")
     }
-
-
   }
-
 
   return (
     <section className="login-page">
@@ -49,13 +45,12 @@ function Login() {
             onChange={event => setPassword(event.target.value)}
             ></Input>
 
-            <span className="error">
-              Ops, usuário ou senha inválidos. Tente novamente!
-            </span>
-
-            <Button text="Continuar"
-              onClick={handleSaveUser}
-            />
+            {
+            <div className="error">
+              <span>Ops, usuário ou senha inválidos. Tente novamente!</span>
+            </div>
+            }
+           <Button text="Continuar" onClick={handleSaveUser}/>
           </label>
         </form>
       </div>

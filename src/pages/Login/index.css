@@ -33,7 +33,9 @@ label h2 {
 }
 
 .error {
+    font-size: 1.05em;
     color: #E9B425;
+    text-align: center;
 }
 
 .right {
