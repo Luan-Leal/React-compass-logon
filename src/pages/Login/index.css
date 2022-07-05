@@ -1,0 +1,63 @@
+.login-page {
+    display: flex;
+    color: #E0E0E0;
+    background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10% 0;
+
+    width: 50%;
+    height: 100vh;
+}
+
+.welcome-phase h1 {
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.welcome-phase p {
+    font-size: 1.25em;
+    font-weight: 200;
+    line-height: 1.5em;
+}
+
+label h2 {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 2.5em;
+}
+
+.error {
+    color: #E9B425;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-image: url(./src/assets/login-img.png);
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .left{
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+.right img{
+
+    width: 50%;
+}
