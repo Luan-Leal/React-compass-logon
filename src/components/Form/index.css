@@ -1,5 +1,5 @@
 .input {
-    display: flex;
+    width: 200%;
     border: 1px solid #ffffff;
     border-radius: 50px;
     margin-bottom: 5%;
@@ -7,10 +7,11 @@
 
 input {
     width: 100%;
-    border: none;
     background-color: transparent;
     color: #ffffff;
     padding: 4%;
+    border-radius: 50px;
+    border: none;
 }
 
 textarea:focus, input:focus {
