@@ -1,0 +1,96 @@
+.home-page {
+    overflow-y: hidden;
+    overflow-x: hidden;
+} 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3% 0;
+    height: 25vh;
+}
+
+header img {
+    width: auto;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    height: 60vh;
+}
+
+.home-left {
+    width: 50%;
+    z-index: -1;
+}
+
+.uol-ball {
+    margin-left: -15%;
+}
+
+.home-right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    width: 50%;
+}
+
+.mission {
+    text-align: end;
+}
+
+.mission h2 {
+    color: #C12D18;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.mission h2:first-child {
+    font-size: 2em;
+}
+
+.mission p {
+    font-size: 1.25em;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+    color: #ffffff;
+    z-index: 2;
+}
+
+.footer-message {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 1%;
+    text-align: end;
+    border-right: 1px solid #ffffff;
+    font-size: 0.750em;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26%;
+}
+
+.countdown-warning {
+    text-align: end;
+    font-size: 0.875em;
+    margin-right: 10%;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 24%;
+
+}

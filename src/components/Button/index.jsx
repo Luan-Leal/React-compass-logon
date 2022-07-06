@@ -1,9 +1,9 @@
 import "./index.css"
 
-function Button({text, onClick}) {
+function Button({text,className ,onClick}) {
     return (
         <div>
-            <button onClick={onClick}>{text}</button>
+            <button className={className} onClick={onClick}>{text}</button>
         </div>
     )
 }

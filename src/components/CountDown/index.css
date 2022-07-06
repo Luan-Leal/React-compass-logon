@@ -1,0 +1,9 @@
+.timer {
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 50%;
+}
+
+.seconds {
+    text-align: center;
+}
