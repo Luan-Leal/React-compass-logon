@@ -7,3 +7,10 @@
 .seconds {
     text-align: center;
 }
+
+@media (max-width: 1000px) {
+    .timer {
+        font-size: 2.5em;
+    }
+    
+}

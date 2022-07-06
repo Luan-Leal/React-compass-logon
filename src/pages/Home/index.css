@@ -1,96 +1,239 @@
 .home-page {
-    overflow-y: hidden;
-    overflow-x: hidden;
-} 
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 3% 0;
-    height: 25vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3% 0;
+  height: 25vh;
 }
 
 header img {
-    width: auto;
-    height: 50px;
+  width: auto;
+  height: 50px;
 }
 
 main {
-    display: flex;
-    height: 60vh;
+  display: flex;
+  height: 65vh;
 }
 
 .home-left {
-    width: 50%;
-    z-index: -1;
+  width: 40%;
+  z-index: -1;
 }
 
 .uol-ball {
-    margin-left: -15%;
+  margin-left: -15%;
 }
 
 .home-right {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 5%;
-    width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+  width: 60%;
 }
 
 .mission {
-    text-align: end;
+  text-align: end;
 }
 
 .mission h2 {
-    color: #C12D18;
-    font-weight: 700;
-    font-size: 2.5em;
+  color: #c12d18;
+  font-weight: 700;
+  font-size: 3em;
 }
 
 .mission h2:first-child {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .mission p {
-    font-size: 1.25em;
+  font-size: 1.4em;
 }
 
-
 footer {
-    display: flex;
-    width: 100%;
-    height: 15vh;
-    background: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
-    color: #ffffff;
-    z-index: 2;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+  color: #ffffff;
+  z-index: 2;
 }
 
 .footer-message {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    padding: 1%;
-    text-align: end;
-    border-right: 1px solid #ffffff;
-    font-size: 0.750em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  padding: 1%;
+  text-align: end;
+  border-right: 1px solid #ffffff;
+  font-size: 0.75em;
 }
 
 .countdown {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 26%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26%;
 }
 
 .countdown-warning {
-    text-align: end;
-    font-size: 0.875em;
-    margin-right: 10%;
-
+  text-align: end;
+  font-size: 0.875em;
+  margin-right: 10%;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-evenly;
-    width: 24%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 24%;
+}
 
+@media (min-width: 2000px) {
+  .countdown {
+    width: 35%;
+  }
+
+  .buttons {
+    width: 15%;
+  }
+
+  header img {
+    height: 90px;
+  }
+}
+
+@media (min-width: 1501px) {
+  .uol-ball {
+    width: 125%;
+    height: auto;
+    margin-left: -20%;
+  }
+
+  .mission h2 {
+    font-size: 5.5em;
+  }
+
+  .mission h2:first-child {
+    font-size: 4.5em;
+  }
+
+  .mission p {
+    font-size: 2.75em;
+  }
+
+  .footer-message {
+    width: 50%;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 1500px) {
+  main {
+    height: 60vh;
+  }
+
+  .mission h2 {
+    color: #c12d18;
+    font-weight: 700;
+    font-size: 3em;
+  }
+
+  .mission h2:first-child {
+    font-size: 2em;
+  }
+
+  .mission p {
+    font-size: 1.4em;
+  }
+
+  footer {
+    height: 15vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mission h2 {
+    font-size: 2em;
+  }
+
+  .mission h2:first-child {
+    font-size: 1.5em;
+  }
+
+  .mission p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 920px) {
+  .mission h2 {
+    font-size: 1.75em;
+  }
+
+  .mission h2:first-child {
+    font-size: 1.25em;
+  }
+
+  .mission p {
+    font-size: 0.875em;
+  }
+
+  .footer-message {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 850px) {
+  .mission h2 {
+    font-size: 1.4em;
+  }
+
+  .mission h2:first-child {
+    font-size: 1.1em;
+  }
+
+  .mission p {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: auto;
+    height: 140px;
+  }
+
+  .home-left {
+    width: 80%;
+    z-index: -1;
+  }
+
+  .uol-ball {
+    width: 150%;
+    margin-left: -40%;
+  }
+
+  .home-right {
+    display: none;
+  }
+
+  .footer-message {
+    display: none;
+  }
+
+  .countdown {
+    display: none;
+  }
+
+  .countdown-warning {
+    display: none;
+  }
+  .buttons {
+    width: 100%;
+  }
 }

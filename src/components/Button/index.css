@@ -25,6 +25,7 @@
     color: #C13216;
     border: none;
     padding: 2%;
+    cursor: pointer;
 }
 
 .logout-button {
@@ -41,4 +42,17 @@
     background: transparent;
     color: #ffffff;
     border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .logout-button {
+        width: 20%;
+        order: 1;
+    }
+
+    .continue-button {
+        width: 80%;
+        order: 2;
+    }
 }
