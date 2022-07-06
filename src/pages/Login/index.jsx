@@ -63,7 +63,7 @@ function Login() {
               { error &&<span>Ops, usuário ou senha inválidos. Tente novamente!</span>}
             </div>
 
-           <Button text="Continuar" onClick={handleSaveUser}/>
+           <Button className="login-button" text="Continuar" onClick={handleSaveUser}/>
           </label>
         </form>
       </div>
