@@ -45,7 +45,7 @@ function Weather() {
   } else if (weather == false) {
     return (
       <div>
-        <span>Carregando o clima...</span>
+        <span className="loading">Carregando...</span>
       </div>
     );
   } else {
