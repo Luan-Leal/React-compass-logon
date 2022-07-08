@@ -31,7 +31,8 @@ function Weather() {
       }
     );
     setWeather(res.data);
-    console.log(res.data);
+
+    console.log(weather.weather[0].icon);
   };
 
   if (location == false) {
@@ -55,7 +56,7 @@ function Weather() {
           {weather.name} - {weather.sys.country}
         </span>
         <div className="temp">
-          <img src={WeatherIcon} alt="" />
+          <img src="../../assets/icons/${iconName}.png" alt="" />
           <span>{weather.main.temp.toFixed(0)}°</span>
         </div>
       </div>
