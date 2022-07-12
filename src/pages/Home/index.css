@@ -169,10 +169,6 @@ footer {
 }
 
 @media (max-width: 1500px) {
-  main {
-    height: 60vh;
-  }
-
   .mission h2 {
     font-size: 3em;
   }
@@ -183,10 +179,6 @@ footer {
 
   .mission p {
     font-size: 1.4em;
-  }
-
-  footer {
-    height: 15vh;
   }
 }
 
@@ -204,11 +196,15 @@ footer {
   }
 
   .footer-message {
-    font-size: 0.6em;
+    font-size: 0.75em;
   }
 }
 
 @media (max-width: 1100px) {
+  main {
+    height: 60vh;
+  }
+
   .mission h2 {
     font-size: 2.25em;
   }
@@ -221,12 +217,20 @@ footer {
     font-size: 1.1em;
   }
 
+  footer {
+    height: 15vh;
+  }
+
   .countdown {
     width: 26%;
   }
 
   .buttons {
     width: 24%;
+  }
+
+  .footer-message p {
+    font-size: 0.75em;
   }
 }
 
@@ -241,10 +245,6 @@ footer {
 
   .mission p {
     font-size: 0.9em;
-  }
-
-  .footer-message {
-    font-size: 0.6em;
   }
 }
 
