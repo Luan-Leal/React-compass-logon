@@ -7,7 +7,7 @@ import "./index.css";
 
 function Page404() {
   const nav = useNavigate();
-  const [counter, setCounter] = React.useState(60);
+  const [counter, setCounter] = React.useState(30);
 
   React.useEffect(() => {
     const timer =

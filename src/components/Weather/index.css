@@ -28,6 +28,6 @@
 
 @media (max-width: 768px) {
   .weather {
-    justify-content: center;
+    justify-content: flex-start;
   }
 }

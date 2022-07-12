@@ -71,9 +71,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   width: 50%;
-
   text-align: end;
-
   font-size: 0.75em;
 }
 
@@ -101,21 +99,12 @@ footer {
   width: 24%;
 }
 
-@media (min-width: 2000px) {
-  .countdown {
-    width: 35%;
-  }
-
-  .buttons {
-    width: 15%;
-  }
-
+@media (max-width: 3000px) {
   header img {
-    height: 90px;
+    width: auto;
+    height: 100px;
   }
-}
 
-@media (min-width: 1501px) {
   .uol-ball {
     width: 125%;
     height: auto;
@@ -123,7 +112,7 @@ footer {
   }
 
   .mission h2 {
-    font-size: 5.5em;
+    font-size: 5em;
   }
 
   .mission h2:first-child {
@@ -140,14 +129,51 @@ footer {
   }
 }
 
+@media (max-width: 2000px) {
+  .mission h2 {
+    font-size: 4.5em;
+  }
+
+  .mission h2:first-child {
+    font-size: 3.25em;
+  }
+
+  .mission p {
+    font-size: 2.5em;
+  }
+  .countdown {
+    width: 35%;
+  }
+
+  .buttons {
+    width: 15%;
+  }
+
+  header img {
+    height: 90px;
+  }
+}
+
+@media (max-width: 1832px) {
+  .mission h2 {
+    font-size: 4em;
+  }
+
+  .mission h2:first-child {
+    font-size: 3em;
+  }
+
+  .mission p {
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 1500px) {
   main {
     height: 60vh;
   }
 
   .mission h2 {
-    color: #c12d18;
-    font-weight: 700;
     font-size: 3em;
   }
 
@@ -164,21 +190,65 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
+  .mission h2 {
+    font-size: 2.5em;
+  }
+
+  .mission h2:first-child {
+    font-size: 1.75em;
+  }
+
+  .mission p {
+    font-size: 1.25em;
+  }
+
+  .footer-message {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mission h2 {
+    font-size: 2.25em;
+  }
+
+  .mission h2:first-child {
+    font-size: 1.75em;
+  }
+
+  .mission p {
+    font-size: 1.1em;
+  }
+
+  .countdown {
+    width: 26%;
+  }
+
+  .buttons {
+    width: 24%;
+  }
+}
+
+@media (max-width: 920px) {
   .mission h2 {
     font-size: 2em;
   }
 
   .mission h2:first-child {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .mission p {
-    font-size: 1em;
+    font-size: 0.9em;
+  }
+
+  .footer-message {
+    font-size: 0.6em;
   }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 850px) {
   .mission h2 {
     font-size: 1.75em;
   }
@@ -189,24 +259,6 @@ footer {
 
   .mission p {
     font-size: 0.875em;
-  }
-
-  .footer-message {
-    font-size: 0.6em;
-  }
-}
-
-@media (max-width: 850px) {
-  .mission h2 {
-    font-size: 1.4em;
-  }
-
-  .mission h2:first-child {
-    font-size: 1.1em;
-  }
-
-  .mission p {
-    font-size: 0.75em;
   }
 }
 
@@ -243,5 +295,29 @@ footer {
   }
   .buttons {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header img {
+    width: auto;
+    height: 75px;
+  }
+}
+
+@media (max-width: 345px) {
+  header img {
+    width: auto;
+    height: 50px;
+  }
+
+  .uol-ball {
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 400px) and (max-height: 900px) {
+  .uol-ball {
+    margin-top: 50%;
   }
 }
