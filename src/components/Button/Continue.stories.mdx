@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import Continue from "./index.jsx";
+
+<Meta title="Components/Button" component={Continue} />
+
+# Continue Button
+
+<ArgsTable of={Continue} />
+
+<Canvas>
+  <Story
+    name="Continue Component"
+    args={{
+      ...Continue.defaultProps,
+      text: "Continue Button",
+      className: "continue-button",
+    }}
+  >
+    {(args) => <Continue {...args} />}
+  </Story>
+</Canvas>
